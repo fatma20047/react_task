@@ -1,0 +1,7 @@
+:root {
+  --Turquoise:#1abc9c;
+}
+
+.about{
+  background-color: var(--Turquoise);
+}
