@@ -1,13 +1,16 @@
 import style from './Navbar.module.css'
 import userImg from './../../assets/img/avataaars.svg'
+import { Link } from 'react-router-dom' 
+
 function Navbar(){
-return<>
+  return<>
     <nav className={`${style.navbars}  d-flex justify-content-between align-items-center text-white p-3 `}>
       <h1>Start Bootstrap</h1>
+
       <ul className=' d-flex justify-content-between p-3 m-3 gap-5'>
-        <li><a href="">Portfolio</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact</a></li>
+        <li><Link to="/Portfolio">Portfolio</Link></li>
+        <li><Link to="/About">About</Link></li>
+        <li><Link to="/Contact">Contact</Link></li>
       </ul>
     </nav>
 
@@ -22,5 +25,3 @@ return<>
 }
 
 export default Navbar;
-
-
